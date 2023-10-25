@@ -1,0 +1,116 @@
+<html>
+
+<head>
+  <style>
+    /* Style the links inside the sidenav */
+    #mySidenav a {
+
+      position: absolute;
+      /* Position them relative to the browser window */
+      left: -160px;
+      /* Position them outside of the screen */
+      transition: 0.5s;
+      /* Add transition on hover */
+
+
+
+
+      height: 30px;
+      width: 200px;
+      /* Set a specific width */
+      text-decoration: none;
+      /* Remove underline */
+      /* Increase font size */
+      color: white;
+      /* White text color */
+      border-radius: 0 25px 25px 0;
+      /* Rounded corners on the top right and bottom right side */
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+
+
+
+    #mySidenav a:hover {
+      left: 0;
+      /* On mouse-over, make the elements appear as they should */
+    }
+
+
+    .left-text {
+      font-size: 25px;
+      flex: 1;
+      padding-top: 2px;
+      padding-left: 10px;
+    }
+
+    .center-text {
+      font-size: 18px;
+      flex: 2;
+      /* Adjust the flex value as needed */
+      padding-top: 6px;
+
+      padding-left: 10px;
+    }
+
+    img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50px;
+      float: right;
+
+    }
+
+    /* The about link: 20px from the top with a green background */
+    #about {
+      top: 20px;
+      background-color: #108801;
+
+
+
+    }
+
+    #blog {
+      top: 80px;
+      background-color: #2196F3;
+      /* Blue */
+    }
+
+    #projects {
+      top: 140px;
+      background-color: #f44336;
+      /* Red */
+    }
+
+    #contact {
+      top: 200px;
+      background-color: #555
+        /* Light Black */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Load an icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+  <div id="mySidenav" class="sidenav">
+
+    <a href="#" id="about"><strong class="left-text">First</strong>
+      <span class="center-text">1354</span><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png"></a>
+
+  </div>
+
+</body>
+
+</html>

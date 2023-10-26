@@ -1,0 +1,24 @@
+<svg viewBox='0 0 630 100' xmlns='http://www.w3.org/2000/svg'>
+    <defs>
+        <style>
+            .cls-1{fill: "&var_emptyBarColor&";}
+            .cls-2{fill: "&var_filledBarColor&";}   
+            .percentage-text { font-size: 20px; font-weight: bold; fill: black; }
+        </style>
+    </defs>
+    
+    <!-- Background Empty Bar -->
+    <rect class='cls-1' x='15' y='45' width='"&var_width&"' height='"&var_barThickness&"' rx='5'/>
+    
+    <!-- Filling Bar with Animation -->
+    <rect class='cls-2' x='15' y='45' width='0' height='"&var_barThickness&"' rx='5'>
+        <animate attributeName='width' from='0' to='"&var_bar&"' dur='2s' begin='0s' fill='freeze' />
+    </rect>
+
+    <!-- Percentage Text -->
+    <text x='620' y='50' class='percentage-text' text-anchor='end'>
+        <animate attributeName='x' from='620' to='&var_width&' dur='2s' begin='0s' fill='freeze' />
+        <animate attributeName='opacity' from='0' to='1' dur='2s' begin='0s' fill='freeze' />
+        "&var_percentage&"
+    </text>
+</svg>
